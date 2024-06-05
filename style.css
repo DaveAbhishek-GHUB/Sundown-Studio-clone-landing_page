@@ -362,13 +362,120 @@ nav h4 a {
   color: white;
   padding: 2vw;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 #footer .footer-logo-wrapper{
   width: 100%;
+  margin: 5vw 0vw 2vw 0vw;
+  z-index: 99;
 }
 #footer .footer-logo-wrapper img{
   width: 100%;
+}
+
+.footer-links{
+  height: 30vh;
+  width: 100%;
+  padding: 2vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.footer-links .first p{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: neu;
+}
+
+.footer-links .second p{
+  font-size: 1.25em;
+  line-height: 1.3;
+  font-size: neu;
+}
+
+.footer-links .second input{
+  background: none;
+  border: none; 
+  height: 3rem;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom{
+  border-top: 0.5px solid #dadada;
+  height: 10vh;
+  width: 100%;
+  z-index: 99;
+}
+
+.footer-bottom .list{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.footer-bottom .list a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-effect{
+  z-index: 1;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.footer-shape-1{
+  z-index: 4;
+  background-color: #fe330a;
+  filter: blur(40px);
+  border-radius: 999em;
+  width: 103em;
+  height: 32em;
+  position: absolute;
+  top: -17em;
+  bottom: auto;
+  left: -19em;
+  right: auto;
+  animation: footer-animation-1 2s infinite alternate;
+}
+
+@keyframes footer-animation-1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: flat;
+    will-change: auto;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-22deg) skew(0deg);
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+}
+
+.footer-shape-2{
+  z-index: 3;
+  background-color: #fe330a;
+  filter: blur(40px);
+  border-radius: 999em;
+  width: 93em;
+  height: 33em;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: -42em;
+  animation: footer-animation-2 3s infinite alternate;
+  transform: matrix(0.903374, 0.627627, -0.627627, 0.903374, 0, 0);
 }
