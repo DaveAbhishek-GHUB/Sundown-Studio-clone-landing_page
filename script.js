@@ -74,13 +74,25 @@ elemc.addEventListener("mouseleave", function () {
 //     fixed.style.backgroundImage = `url(${image})`;
 // })
 
-var elems = document.querySelectorAll(".elem");
-console.log(elems);
+function page04Animaiton() {
+  var elems = document.querySelectorAll(".elem");
+  console.log(elems);
 
-elems.forEach(function (e) {
-  e.addEventListener("mouseenter", function () {
-    var image = e.getAttribute("data-image");
-    console.log(image);
-    fixed.style.backgroundImage = `url(${image})`;
+  elems.forEach(function (e) {
+    e.addEventListener("mouseenter", function () {
+      var image = e.getAttribute("data-image");
+      console.log(image);
+      fixed.style.backgroundImage = `url(${image})`;
+    });
   });
-});
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 100,
+  });
+}
+
+function swiperAnimation() {}
+
+swiperAnimation();
+page04Animaiton();

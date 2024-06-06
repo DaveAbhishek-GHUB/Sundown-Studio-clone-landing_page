@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/cddfddeff0f66d9f03e9df2585ea819e?family=NeueHaasDisplay-Roman);
+
 @font-face {
   font-family: neu;
   src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
@@ -103,7 +105,7 @@ nav h4 a {
 }
 
 #center #right h1 {
-  font-size: 156px;
+  font-size: 7em;
   font-weight: 500;
   line-height: 125px;
   font-family: neu;
@@ -343,10 +345,46 @@ nav h4 a {
 }
 
 #page4{
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #efeae3;
+  padding: 5vw 2vw;
 }
+
+.page-4-heading h6{
+  font-size: 14px;
+  font-weight: 400;
+  color: #0b0500;
+  padding: 2vw 0vw;
+  font-family: "NeueHaasDisplay-Roman";
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  height: 90%;
+  border-left: 1px solid black;
+}
+
+.swiper-slide{
+  padding: 12px;
+}
+
+.swiper-slide p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: "NeueHaasDisplay-Roman";
+}
+
+.swiper-03-img img{
+  height: 8rem;
+}
+
 #page5{
   height: 100vh;
   width: 100%;
@@ -478,4 +516,23 @@ nav h4 a {
   right: -42em;
   animation: footer-animation-2 3s infinite alternate;
   transform: matrix(0.903374, 0.627627, -0.627627, 0.903374, 0, 0);
-} 
+}
+
+/* // media queries  */
+
+
+@media (max-width:600px) {
+  #page1{
+    width: 100%;
+  }
+  nav img{
+    height: 2rem;
+  }
+  #nav-buttons h4{
+    padding: 12px;
+  }
+  #center{
+    flex-wrap: wrap-reverse;
+    align-items: end;
+  }
+}
