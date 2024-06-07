@@ -19,6 +19,7 @@ body {
   /* background-color: #0b0500; */
   position: relative;
   z-index: 100;
+  overflow-y: hidden;
 }
 
 #page1 {
@@ -27,6 +28,7 @@ body {
   position: relative;
   padding: 0 1vw;
   background-color: #efeae3;
+  overflow-y: hidden;
 }
 
 nav {
@@ -37,7 +39,7 @@ nav {
   padding: 0vw 2vw;
   width: 100%;
   padding: 20px;
-  /* background-color: lightcoral; */
+  position: relative;
 }
 
 #nav-buttons {
@@ -105,7 +107,7 @@ nav h4 a {
 }
 
 #center #right h1 {
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 500;
   line-height: 125px;
   font-family: neu;
@@ -518,21 +520,69 @@ nav h4 a {
   transform: matrix(0.903374, 0.627627, -0.627627, 0.903374, 0, 0);
 }
 
+nav h3{
+  display: none;
+}
+
+#menu{
+  position: relative  ;
+  z-index: 999;
+}
 /* // media queries  */
 
+#full-scr{
+  height: 100vh;
+  width: 100%;
+  background-color: #0b050060;
+  position: fixed;
+  z-index: 101;
+  top: -100%;
+  transition: all ease 0.3s;
+}
 
 @media (max-width:600px) {
   #page1{
     width: 100%;
   }
+
   nav img{
-    height: 2rem;
+    height: 5vh;
   }
-  #nav-buttons h4{
-    padding: 12px;
+
+  #nav-buttons{
+    display: none;
   }
+
+  nav h3{
+    display: block;
+    padding: 2vw 5vw;
+    border: 1px solid rgb(103, 91, 91);
+    border-radius: 4vw;
+    font-family:"NeueHaasDisplay-Roman";
+  }
+
+  #full-div01{
+    height: 50%;
+    width: 100%;
+    background-color: #efeae3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
   #center{
     flex-wrap: wrap-reverse;
-    align-items: end;
+  }
+
+  #right {
+    width: 100%;
+    height: 50%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+  }
+
+  #center #right h1{
+    font-size: 4em;
+    line-height: normal;
   }
 }
