@@ -527,6 +527,7 @@ nav h3{
 #menu{
   position: relative  ;
   z-index: 999;
+  cursor: pointer;
 }
 /* // media queries  */
 
@@ -569,6 +570,19 @@ nav h3{
     border-bottom-right-radius: 20px;
   }
 
+  #full-scr #full-div01{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5vw 3vw;
+  }
+  #full-scr #full-div01 p{
+    font-size: 12vw;
+    font-weight: 700;
+    font-family:"NeueHaasDisplay-Roman";
+  }
+
   #center{
     flex-wrap: wrap-reverse;
   }
@@ -584,5 +598,72 @@ nav h3{
   #center #right h1{
     font-size: 4em;
     line-height: normal;
+  }
+
+  /* page-2 */
+
+  #page2{
+    padding: 5vw 0vw;
+  }
+
+  #cont h1{
+    font-size: 70px;
+  }
+
+  #cont #gola{
+    height: 40px;
+    width: 40px;
+  }
+
+  #page2-bottom{
+    flex-wrap: wrap;
+  }
+
+  #page2-bottom h1{
+    width: 100%;
+    font-size: 2.25em;
+  }
+
+  #page2-bottom-part2{
+    width: 100%;
+    z-index: 99;
+  }
+
+  #page2-bottom-part2 p{
+    font-size: 20px;
+  }
+
+  #page2 #gooey{
+    height: 80vw;
+    width: 80vw;
+  }
+
+  .elem h2{
+    font-size: 40px;
+  }
+
+  /* page4 */
+
+  #page4{
+    height: 50vh;
+    border-radius: 0vw 0vw 5vw 5vw;
+  }
+  .swiper-slide{
+    height: 50%;
+    width: 100%;
+  }
+  
+  /* footer  */
+  .footer-links {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  #footer .footer-logo-wrapper{
+    margin-top: 20vh;
+  }
+
+  .footer-bottom .list a{
+    font-size: 0.9em;
   }
 }
