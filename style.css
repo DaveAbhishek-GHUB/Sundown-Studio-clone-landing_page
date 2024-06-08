@@ -537,7 +537,7 @@ nav h3{
   background-color: #0b050060;
   position: fixed;
   z-index: 101;
-  top: -100dvh;
+  top: -100%;
   transition: all ease 0.3s;
 }
 
@@ -665,5 +665,20 @@ nav h3{
 
   .footer-bottom .list a{
     font-size: 0.9em;
+  }
+}
+
+@media (max-width:1024px){
+  /* page2 */
+  #page2-bottom{
+    height: 35vh;
+  }
+
+  /* page4 */
+
+  #page4{
+    height: 35vh;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
   }
 }
