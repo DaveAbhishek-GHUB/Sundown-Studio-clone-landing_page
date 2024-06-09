@@ -537,7 +537,7 @@ nav h3{
   background-color: #0b050060;
   position: fixed;
   z-index: 101;
-  top: -100%;
+  top: -110%;
   transition: all ease 0.3s;
 }
 
